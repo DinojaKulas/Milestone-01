@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard</title>
+    <link rel="stylesheet" href="manager.css">
+</head>
+
+<body>
+    <div class="slidebar" id="slidebar">
+        <div class="logo">
+            <ul class="menu">
+                <li class="das">
+                    <span>Dashboard</span>
+                </li>
+                <li>
+                    <a href="#" onclick="Adminshow()">
+                        <span>Admin</span>
+                    </a>
+                </li>
+                
+                <li>
+                    <a href="#" onclick="overdueshow()">
+                        <span>Overdue</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#" onclick="rentshow()">
+                        <span>Rental</span>
+                    </a>
+                </li>
+                <!--<li>
+                    <a href="#" onclick="returnedshow()">
+                        <span>Returns</span>
+                    </a>
+                </li>-->
+                <li>
+                    <a href="#" onclick="customershow()">
+                        <span>Customers</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#" onclick="reportshow()">
+                        <span>Reports</span>
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </div>
+
+
+    <!-- Admin -->
+    <section id="Admincontainer" style="display: none;">
+        <div class="container">
+            <h1>Bike Rental Manager Dashboard</h1>
+            <form id="bikeForm">
+                <label for="registrationNumber">Registration Number:</label>
+                <input type="text" id="registrationNumber" name="registrationNumber" required>
+
+                <label for="brand">Brand:</label>
+                <input type="text" id="brand" name="brand" required>
+
+                <label for="model">Model:</label>
+                <input type="text" id="model" name="model" required>
+
+                <label for="category">Category:</label>
+                <input type="text" id="category" name="category" required>
+
+                <button type="submit">Add Bike</button>
+            </form>
+
+            <table id="bikesTable">
+                <thead>
+                    <tr>
+                        <th>Registration Number</th>
+                        <th>Brand</th>
+                        <th>Model</th>
+                        <th>Category</th>
+                        <th>Actions</th>
+                    </tr>
+                </thead>
+                <tbody>
+
+                </tbody>
+            </table>
+        </div>
+    </section>
+
+    <!-- Customer -->
+    <section id="customerscontainer" style="display: none;">
+        
+      
+    </section>
+
+    
+    <!--overdue-->
+    <section id="overduecontainer" style="display: none;">
+        <div class="overdue-container">
+            <h1>Overdue Alerts</h1>
+            <table id="overdue-table">
+                <thead>
+                    <tr>
+                        <!--<th>Name</th>-->
+                        <th>Reg Number</th>
+                        <th>Brand</th>
+                        <th>Model</th>
+                        <th>Rental Date</th>
+                        <th>Status</th>
+                    </tr>
+                </thead>
+                <tbody id="overdue-list">
+                    <!-- Overdue alerts -->
+                </tbody>
+            </table>
+            <p id="overduelist"></p>
+        </div>
+    </section>
+    
+    <section id="rentcontainer" style="display: none;">
+        <div id="customerRentalsSection" class="mt-5">
+            <div class="card shadow-sm">
+                <div class="header">
+                    <h2 class="h5 mb-0">Customer Rentals</h2>
+                </div>
+                <div class="card-body p-0">
+                    <table class="table mb-0">
+                        <thead>
+                            <tr>
+                                <!--<th>Customer</th>-->
+                                <th>Reg Number</th>
+                                <th>Brand</th>
+                                <th>Model</th>
+                                <th>Rent Date</th>
+                                <th>Status</th>
+                            </tr>
+                        </thead>
+                        <tbody id="customerRentalsTableBody"></tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- return -->
+    <!--<section id="returnedcontainer" style="display: none;">
+        <div class="return-container" id="returncontainer">
+            <h1>Return Motorbike</h1>
+            <form id="return-motorbike-form">
+                <label for="return-nic">Customer NIC:</label>
+                <input type="text" id="return-nic" required>
+
+                <label for="return-registration">Motorbike Registration Number:</label>
+                <input type="text" id="return-registration" required>
+
+              <label for="return-date">Return Date:</label>
+                <input type="date" id="return-date" required> 
+
+                <button type="button" onclick="returnMotorbike()">Return Motorbike</button>
+            </form>
+        </div>
+    </section>-->
+
+
+    <!-- report -->
+    <section id="Reportscontainer" style="display: none;">
+        <table>
+            <tr>ff</tr>
+        </table>
+    </section>
+
+
+    <script src="manager.js"></script>
+</body>
+
+</html>

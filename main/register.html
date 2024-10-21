@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Register</title>
+    <link rel="stylesheet" href="Style1.css">
+ 
+</head>
+
+<body>
+    <div class="container">
+        <div class="title"><b>Registation</b></div>
+        <form id="userCreationForm">
+            <div class="input-box">
+                <span class="details">Username</span>
+                <input type="text" id="createUsername" placeholder="Enter your Username" required>
+            </div>
+            <div class="input-box">
+                <span class="details">Email</span>
+                <input type="text" id="createEmail" placeholder="Enter your Email" required>
+            </div>
+            <div class="input-box">
+                <span class="details">Phone Number</span>
+                <input type="text" id="createPhoneNumber" placeholder="Enter your Number" required>
+            </div>
+            <div class="input-box">
+                <span class="details">License Number</span>
+                <input type="text" id="createLicenseNumber" placeholder="Enter your Number" required>
+            </div>
+            <div class="input-box">
+                <span class="details">Password</span>
+                <input type="text" id="createPassword" placeholder="Enter your Password" required>
+            </div>
+            <div class="input-box">
+                <span class="details">Confirm Password</span>
+                <input type="text" id="createConfirmPassword" placeholder="Confirm your Password" required>
+            </div>
+            <div class="button">
+                <input type="submit" value="Register">
+                <a href="login.html">Sign-in</a>
+            </div>
+        </form>
+        <p id="creationMessage"></p>
+    </div>
+    <script src="register.js"></script>
+</body>
+
+</html>

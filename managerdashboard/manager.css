@@ -1,0 +1,208 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body */
+body {
+    display: flex;
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 0;
+}
+
+/* Sidebar */
+.slidebar {
+    position: static;
+    width: 200px;
+    height: 100vh;
+    padding: 30px;
+    background: rgb(11, 11, 11);
+}
+
+.logo {
+    height: 80px;
+    padding: 16px;
+}
+
+.menu {
+    height: 88%;
+    padding: 0;
+    position: relative;
+    list-style: none;
+}
+
+.menu li {
+    padding: 1rem;
+    margin: 8px;
+    color: white;
+}
+
+.menu .das {
+    background-color: aliceblue;
+    opacity: 0.7;
+    color: black;
+    width: 120px;
+}
+
+.menu a {
+    text-decoration: none;
+    color: white;
+}
+
+/* All Container  */
+.container, .overdue-container, .rental-container, .return-container {
+    max-width: 800px;
+    margin: 50px auto;
+    padding: 20px;
+    background: white;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Header */
+h1 {
+    text-align: center;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+.header {
+    background-color: lightgrey;
+    color: black;
+}
+
+/* Form */
+form {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 10px;
+    margin-bottom: 20px;
+}
+
+form label {
+    grid-column: span 1;
+}
+
+form input {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+form button {
+    grid-column: span 2;
+    padding: 10px 20px;
+    background-color: #355274;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+form button:hover {
+    background-color: #ae4c85;
+}
+
+/* Table Styles */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+table, td {
+    border: 1px solid #ddd;
+}
+
+th, td {
+    padding: 10px;
+    text-align: left;
+}
+
+th {
+    background-color: #ae4c85;
+    color: white;
+}
+
+#overdue-table, #rental-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 20px;
+}
+
+#overdue-table thead, #rental-table thead {
+    background-color: #f2f2f2;
+    color: black;
+}
+
+#overdue-table th, #overdue-table td, #rental-table th, #rental-table td {
+    padding: 12px;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+}
+
+#overdue-table tr:nth-child(even), #rental-table tr:nth-child(even) {
+    background-color: #f9f9f9;
+}
+
+#overdue-table tr:hover, #rental-table tr:hover {
+    background-color: #f1f1f1;
+}
+
+#overduelist, #rental-body {
+    font-size: 14px;
+    color: #666;
+    text-align: center;
+}
+
+/* Action Button */
+.actions {
+    display: flex;
+    gap: 10px;
+}
+
+.actions button {
+    padding: 5px 10px;
+    border: none;
+    cursor: pointer;
+}
+
+.actions .edit {
+    background-color: #355274;
+    color: white;
+}
+
+.actions .edit:hover {
+    background-color: #ae4c85;
+}
+
+.actions .delete {
+    background-color: #ae4c85;
+    color: white;
+}
+
+.actions .delete:hover {
+    background-color: #355274;
+}
+
+/* Card */
+.card {
+    border-radius: 10px;
+    border: none;
+}
+
+.table {
+    margin-bottom: 0;
+}
+.return-button{
+    padding: 5px;
+    background-color: #355274;
+    color: white; 
+    border: none;
+    border-radius: 5px;
+}
+.return-button  :hover{
+    background-color: #355274;
+}
